@@ -1,8 +1,8 @@
 # TicTac
 
-![Alt text](https://github.com/user-attachments/assets/e1519070-3c80-43cb-bf6e-d10292ba4ee6)
+![Alt text](https://github.com/user-attachments/assets/799540e7-845f-4b3b-8800-6e430777dd89)
 
-![Alt text](https://github.com/user-attachments/assets/e1519070-3c80-43cb-bf6e-d10292ba4ee6)
+![Alt text](https://github.com/user-attachments/assets/6ad2b8c3-9aff-47c3-892c-e5a324346412)
 
 - [Online Demo](https://rezageshaniweb.github.io/TicTac/)
 
