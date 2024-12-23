@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTac</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/output.css">
+</head>
+
+<body>
+    <main
+        class="w-full h-screen bg-gray-900 flex flex-col justify-center items-center flex-wrap overflow-hidden relative select-none">
+        <section id="p1" class="w-full h-full flex flex-col justify-center items-center -mt-20">
+            <h1 class="text-center text-white text-8xl mb-20">Ready to play?</h1>
+            <button class="px-6 py-3 bg-gray-400 rounded-md text-xl hover:bg-gray-300 transition-all duration-400">click
+                here</button>
+        </section>
+        <section id="p2" class="hidden w-full h-full flex flex-col justify-center items-center">
+            <h2 class="text-center text-white text-8xl mb-24">player 1 :</h2>
+            <div class="flex gap-10 items-center">
+                <span id="x"
+                    class="px-5 py-2 bg-gray-400 rounded-md text-3xl hover:bg-gray-300 transition-all duration-400 cursor-pointer">X</span>
+                <span class="text-center text-3xl text-white">OR</span>
+                <span id="o"
+                    class="px-5 py-2 bg-gray-400 rounded-md text-3xl hover:bg-gray-300 transition-all duration-400 cursor-pointer">O</span>
+            </div>
+        </section>
+        <section id="p3" class="hidden w-full h-full flex justify-center items-center gap-3 md:gap-24">
+            <div
+                class="animate-anime1 mr-[150px] w-[40%] md:w-[350px] h-[400px] bg-white text-gray-900 text-center flex flex-col justify-center items-center rounded-xl">
+                <h3 class="text-4xl mb-10">player 1</h3>
+                <h5 class="text-xl mb-5">your select is : </h5>
+                <button id="p1Selected" class="px-5 py-2 bg-gray-400 rounded-md text-3xl"></button>
+            </div>
+            <div
+                class="animate-anime2 ml-[150px] w-[40%] md:w-[350px] h-[400px] bg-white text-gray-900 text-center flex flex-col justify-center items-center rounded-xl">
+                <h3 class="text-4xl mb-10">player 2</h3>
+                <h5 class="text-xl mb-5">your select is : </h5>
+                <button id="p2Selected" class="px-5 py-2 bg-gray-400 rounded-md text-3xl"></button>
+            </div>
+        </section>
+        <section id="p4"
+            class="hidden w-[75%] sm:w-[450px] h-[380px] flex flex-wrap *:w-1/3 *:h-1/3 *:flex *:justify-center *:items-center *:text-white *:text-4xl *:cursor-pointer">
+            <div data-status="off" class="border-b border-r"></div>
+            <div data-status="off" class="border-b border-r"></div>
+            <div data-status="off" class="border-b"></div>
+            <div data-status="off" class="border-b border-r"></div>
+            <div data-status="off" class="border-b border-r"></div>
+            <div data-status="off" class="border-b "></div>
+            <div data-status="off" class="border-r"></div>
+            <div data-status="off" class="border-r"></div>
+            <div data-status="off"></div>
+        </section>
+        <section id="p5" class="absolute top-5 left-10 bg-gray-400 py-4 px-9 rounded-lg text-lg hidden playerStatus">
+            player 1
+        </section>
+        <section id="p6" class="absolute top-5 right-10 bg-gray-400 py-4 px-9 rounded-lg text-lg hidden">player 2
+        </section>
+
+        <!-- info -->
+        <div class="hidden w-[170px] h-[170px] rounded-full border-[1px] border-infoColor outline-[1px] outline-infoColor 
+        outline-offset-8 fixed bottom-[50px] right-[40px] md:flex items-center justify-center select-none z-50 group">
+            <div class="circle w-[165px] h-[165px] rounded-full">
+                <img src="img/me5.webp" alt="" class="w-full h-full rounded-full object-cover">
+            </div>
+            <strong class="absolute top-[45%] right-[-87px] rotate-[90deg] text-[15px] italic text-infoColor">Frontend
+                Developer</strong>
+            <a href="https://www.linkedin.com/in/reza-geshani-web"><i
+                    class="bi bi-linkedin group-hover:visible text-[26px] text-white absolute invisible transition-all duration-150 py-[10px] px-[30px] hover:opacity-100 hover:text-[#1f9caa] top-[-10px] left-[-58px]"></i></a>
+            <a href="https://www.instagram.com/rezageshani_web"><i
+                    class="bi bi-instagram group-hover:visible text-[26px] absolute invisible transition-all duration-150 py-[10px] px-[30px] hover:opacity-100 hover:text-[#1f9caa] text-white top-[40px] left-[-80px]"></i></a>
+            <a href="https://github.com/RezaGeshaniWeb/"><i
+                    class="bi bi-github group-hover:visible text-[26px] absolute invisible transition-all duration-150 py-[10px] px-[30px] hover:opacity-100 hover:text-[#1f9caa] text-white top-[90px] left-[-80px]"></i></a>
+            <a href="mailto:rezageshaniweb@gmail.com"><i
+                    class="bi bi-envelope-at group-hover:visible text-[26px] absolute invisible transition-all duration-150 py-[10px] px-[30px] hover:opacity-100 hover:text-[#1f9caa] text-white top-[130px] left-[-58px]"></i></a>
+        </div>
+    </main>
+
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
